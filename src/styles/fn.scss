@@ -1,0 +1,39 @@
+@import "./mixin.scss";
+
+/*这个文件放一些功能类*/
+//单行截断
+.text-elip {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+//多行截断
+.text-elips {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* ! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+}
+.line-1 {
+  @include text-elipsis(1);
+}
+.line-2 {
+  @include text-elipsis(2);
+}
+.line-3 {
+  @include text-elipsis(3);
+}
+.line-4 {
+  @include text-elipsis(4);
+}
+.line-5 {
+  @include text-elipsis(5);
+}
+.line-6 {
+  @include text-elipsis(6);
+}
+.line-8 {
+  @include text-elipsis(7);
+}

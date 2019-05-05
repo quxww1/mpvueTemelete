@@ -1,0 +1,12 @@
+/*这个文件放mixin*/
+
+/*多行文本截断*/
+@mixin text-elipsis($linenumber) {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  /* ! autoprefixer: off */
+  -webkit-box-orient: vertical;
+  /* autoprefixer: on */
+  -webkit-line-clamp: $linenumber;
+}
